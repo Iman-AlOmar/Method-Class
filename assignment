@@ -1,0 +1,115 @@
+```csharp
+
+using System;
+
+ 
+
+namespace MathOperationApp
+
+{
+
+    // Step 1: Create a class
+
+    public class MathClass
+
+    {
+
+        // Step 2: Create a void method that takes two integers
+
+        public void DoMath(int firstNumber, int secondNumber)
+
+        {
+
+            // Perform a math operation on the first integer
+
+            int result = firstNumber * 2;
+
+ 
+
+            // Display the second integer to the screen
+
+            Console.WriteLine("Second number is: " + secondNumber);
+
+ 
+
+            // Display the math operation result for reference
+
+            Console.WriteLine("Result of operation on first number: " + result);
+
+        }
+
+    }
+
+ 
+
+    class Program
+
+    {
+
+        static void Main(string[] args)
+
+        {
+
+            // Step 3: Instantiate the class
+
+            MathClass mathObj = new MathClass();
+
+ 
+
+            // Step 4: Call the method in the class, passing in two numbers
+
+            mathObj.DoMath(5, 10);
+
+ 
+
+            // Step 5: Call the method again with different parameters
+
+            mathObj.DoMath(7, 20);
+
+ 
+
+            // Keep console open until a key press so results can be seen
+
+            Console.ReadKey();
+
+        }
+
+    }
+
+}
+
+```
+
+ 
+
+---
+
+ 
+
+### **What this program does:**
+
+1. Creates a class called `MathClass`.
+
+2. Defines a void method DoMath (int firstNumber, int secondNumber) that:
+
+ 
+
+Multiplies the first number by 2.
+
+ 
+
+Prints the second number to the console.
+
+ 
+
+(Optional) Also prints the result of the math operation.
+
+ 
+
+3. Instantiates MathClass in Main().
+
+ 
+
+4. Calls the method twice with different integer values.
+
+ 
